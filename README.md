@@ -1,8 +1,12 @@
 # Game of Thrones: A Song of Networks and Homophily
+
 Martin Lukac
+
 Centre for Sociological Research, KU Leuven
 
-_“You know nothing, Jon Snow.” — Ygritte_
+<p align = "centre"> <i>
+“You know nothing, Jon Snow.” — Ygritte
+</p> </i>
 
 Game of Thrones TV show became a world-wide phenomenon, braking records of viewership with each new episode. Originally an adaptation of a series of fantasy novels from George R. R. Martin by the name of A Song of Ice and Fire—a seven volume series, out of which two last volumes are still in writing. The books are generally praised for their medieval realism combining historical elements with fantasy and realistic characters—protagonists die from minor stab wounds and often fail in their endeavours. Realism of A Song of Ice and Fire is something that appeals to wide audiences and makes it possible for the readership to empathise with the main characters while being engaged in a fantastic world full of dragons, mysticism, and political machinations.
 
