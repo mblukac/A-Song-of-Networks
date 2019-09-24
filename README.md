@@ -37,9 +37,45 @@ Initial evidence for homophily can be obtained also from visualization in Figure
 
 ERGMs are modelling the probability of a tie occurring between two randomly chosen nodes, given the covariates included in the model. The aim is to build up a model that would well represent the dependency structure of the modelled network by adding important nodal or structural covariates. Model estimation followed a stepwise strategy, which is shown in Table 1. First, I started with an empty model, estimating only the density of the network. Second, I added clustering effect in the form shared partner distribution—shared triangular relationships. Third, I added nodal covariates—gender, nobility, and house allegiances. Finally, I added three homophily variables, one for each of the investigated hypotheses—gender, nobility, and house allegiance. Homophily variables are placed at the top of the Table 2. Adding all of these covariates seems to improve the model fit, which is shown by decreasing AIC and BIC in Table 1. for each subsequent model.
 
+**Table 1.** *ERGM: Model Selection*
+
+|   |                                                           | AIC  | BIC  |
+|---|-----------------------------------------------------------|------|------|
+| 1 | Empty model                                               | 4331 | 4339 |
+| 2 | + shared partner distribution (gwesp)                     | 3791 | 3806 |
+| 3 | + node covariates (gender, allegiances, nobility)         | 3601 | 3704 |
+| 4 | + homophily (node match on gender, allegiances, nobility) | 3260 | 3385 |
+
+
 The results show significant positive effects of all three homophily variables, while controlling for all structural variables included in the model. First, gender homophily shows that the odds of having a tie between two nodes of the same gender is 1.62-times the odds of having a tie between two different genders. Second, nobility homophily shows that it is 1.25-times more likely to have a tie between people of the same nobility status, compared to individuals of different status. Finally, allegiances homophily shows that it is 5.58-times more likely to have a tie between two individuals with the same house allegiance, compared to different allegiances. These findings verify the hypotheses that the Game of Thrones realm contains realism not only regarding the physical abilities of its characters, but also with regard to their social relations.
 
 It has to be noted, however, that the effect of allegiance homophily is the largest among all three investigated effects—3.4-times larger than the effect of gender homophily and 4.5-times larger than nobility homophily. It might be argued that house allegiance is one of the most important factors for association of individuals in the Game of Thrones realm, as the houses seem to play important institutional roles. In the story, not only do they provide protection against invasion from opposing houses, they also provide representation at the high court. Moreover, marriage strategies often follow findings of Marcassa, Pouyet & Trégouët (2017), using the institution of marriage as a tool to strengthen allegiances among the important houses in the higher political circles.
+
+**Table 2.** *ERGM: Model Coefficients and Standard Errors*
+
+|                                    | Model 1 |      |   | Model 2 |      |   | Model 3 |      |   | Model 4 |      |
+|------------------------------------|---------|------|---|---------|------|---|---------|------|---|---------|------|
+|                                    | est.    | s.e. |   | est.    | s.e. |   | est.    | s.e. |   | est.    | s.e. |
+| Node Match (Gender Homophily)      |         |      |   |         |      |   |         |      |   | 0.48    | 0.16 |
+| Node Match (Nobility Homophily)    |         |      |   |         |      |   |         |      |   | 0.22    | 0.11 |
+| Node Match (Allegiances Homophily) |         |      |   |         |      |   |         |      |   | 1.72    | 0.09 |
+|                                    |         |      |   |         |      |   |         |      |   |         |      |
+| Density                            | -3.05   | 0.04 |   | -5.35   | 0.16 |   | -7.10   | 0.40 |   | -6.70   | 0.37 |
+| Shared Partner Distribution        |         |      |   | 2.28    | 0.16 |   | 2.03    | 0.16 |   | 1.92    | 0.16 |
+|                                    |         |      |   |         |      |   |         |      |   |         |      |
+| Node Covariate (Sex)               |         |      |   |         |      |   | -0.14   | 0.07 |   | -0.49   | 0.12 |
+| Node Covariate (Nobility)          |         |      |   |         |      |   | 0.57    | 0.06 |   | 0.62    | 0.07 |
+| Node Factor: Baratheon             |         |      |   |         |      |   | 1.22    | 0.21 |   | 1.27    | 0.20 |
+| Node Factor: Greyjoy               |         |      |   |         |      |   | 0.98    | 0.29 |   | 1.10    | 0.29 |
+| Node Factor: Lannister             |         |      |   |         |      |   | 0.84    | 0.18 |   | 0.39    | 0.16 |
+| Node Factor: Night's Watch         |         |      |   |         |      |   | 0.88    | 0.18 |   | 0.54    | 0.17 |
+| Node Factor: None                  |         |      |   |         |      |   | 0.59    | 0.19 |   | 0.34    | 0.17 |
+| Node Factor: Stark                 |         |      |   |         |      |   | 0.95    | 0.18 |   | 0.42    | 0.16 |
+| Node Factor: Targaryen             |         |      |   |         |      |   | 0.92    | 0.19 |   | 0.65    | 0.17 |
+| Node Factor: Tully                 |         |      |   |         |      |   | 0.19    | 0.21 |   | 0.07    | 0.19 |
+| Node Factor: Tyrell                |         |      |   |         |      |   | 0.34    | 0.24 |   | 0.34    | 0.23 |
+| Node Factor: Wildling              |         |      |   |         |      |   | -0.04   | 0.38 |   | 0.05    | 0.44 |
+
 
 The smallest effect of nobility homophily can be explained by the nature of the data. The dataset that I use is tracking interactions among individuals—not friendship and alliance networks per se. Nobility in the Game of Thrones realm necessarily interact with the commoners, who are often employed as their servants or men at arms. Although I initially hypothesised nobility homophily as a structural effect which would segregate nobility from commoners, an explanation of the low effect might suggest also an opposite social mechanism. Hypothetically, although nobility would prefer to associate only with nobility, their servants and men at arms are indispensable for their well-being and safety, therefore they are structurally bound to associate also with lower societal ranks.
 
