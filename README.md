@@ -61,13 +61,14 @@ It has to be noted, however, that the effect of allegiance homophily is the larg
 |                                    | Model 1 |      |   | Model 2 |      |   | Model 3 |      |   | Model 4 |      |
 |------------------------------------|---------|------|---|---------|------|---|---------|------|---|---------|------|
 |                                    | est.    | s.e. |   | est.    | s.e. |   | est.    | s.e. |   | est.    | s.e. |
+| **Homophily**                      |         |      |   |         |      |   |         |      |   |         |      |
 | Node Match (Gender Homophily)      |         |      |   |         |      |   |         |      |   | 0.48    | 0.16 |
 | Node Match (Nobility Homophily)    |         |      |   |         |      |   |         |      |   | 0.22    | 0.11 |
 | Node Match (Allegiances Homophily) |         |      |   |         |      |   |         |      |   | 1.72    | 0.09 |
-|                                    |         |      |   |         |      |   |         |      |   |         |      |
+| **Structural parameters**          |         |      |   |         |      |   |         |      |   |         |      |
 | Density                            | -3.05   | 0.04 |   | -5.35   | 0.16 |   | -7.10   | 0.40 |   | -6.70   | 0.37 |
 | Shared Partner Distribution        |         |      |   | 2.28    | 0.16 |   | 2.03    | 0.16 |   | 1.92    | 0.16 |
-|                                    |         |      |   |         |      |   |         |      |   |         |      |
+| **Node attributes**                |         |      |   |         |      |   |         |      |   |         |      |
 | Node Covariate (Sex)               |         |      |   |         |      |   | -0.14   | 0.07 |   | -0.49   | 0.12 |
 | Node Covariate (Nobility)          |         |      |   |         |      |   | 0.57    | 0.06 |   | 0.62    | 0.07 |
 | Node Factor: Baratheon             |         |      |   |         |      |   | 1.22    | 0.21 |   | 1.27    | 0.20 |
