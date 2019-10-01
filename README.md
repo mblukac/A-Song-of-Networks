@@ -111,3 +111,5 @@ Possible extension of this paper could be to expand this investigation across al
 - Marsden, P. V. (1987). Core discussion networks of Americans. American Sociological Review, 52 (1), pp. 122-131
 - Padgett, J. F. and Ansell, C. K. (1993). Robust Action and the Rise of the Medici, 1400-1434. American Journal of Sociology, 98 (6), pp. 1259-1319
 - Shrum, W., Cheek, N. H., Hunter, S. M. (1988). Friendship in School: Gender and Racial Homophily. Sociology of Education, 61 (4), pp. 227-239.
+
+
